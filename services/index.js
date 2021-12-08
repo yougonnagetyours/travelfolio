@@ -4,36 +4,36 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
 export const getPosts = async () => {
   const query = gql`
-  query MyQuery {
-    postsConnection {
-      edges {
-        node {
-          author {
-            bio
-            name
-            id
-            photo {
+    query MyQuery {
+      postsConnection {
+        edges {
+          node {
+            author {
+              bio
+              name
+              id
+              photo {
+                url
+              }
+            }
+            createdAt
+            slug
+            title
+            excerpt
+            featuredImage {
               url
             }
-          }
-          createdAt
-          slug
-          title
-          excerpt
-          featuredImage {
-            url
-          }
-          categories {
-            name
-            slug
+            categories {
+              name
+              slug
+            }
           }
         }
       }
-    }
-  }  
+    }  
   `
 
-  const result = await request(graphglAPI, query)
+  const result = await request(graphqlAPI, query)
 
   return result.postsConnection.edges;
 }
