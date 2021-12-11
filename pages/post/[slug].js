@@ -4,13 +4,24 @@ import { getPosts, getPostDetails } from '../../services'
 
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm } from '../../components'
  
-const PostDetails = ({ post }) => {
-
-  console.log(post)  
+const PostDetails = () => {
 
   return (
-    <div className=''>
-      
+    <div className='container mx-auto px-10 mb-8'>
+      <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
+        <div className='col-span-1 lg:col-span-8'>
+            <PostDetail />
+            <Author />
+            <CommentsForm />
+            <Comments />
+        </div>
+        <div className='col-span-1 lg:col-span-4'>
+            <div className='relative lg:sticky top-8'>
+                <PostWidget />
+                <Categories />
+            </div>
+        </div>
+      </div>
     </div>
   )
 }
@@ -18,12 +29,13 @@ const PostDetails = ({ post }) => {
 export default PostDetails
 
 export async function getStaticProps({ params }) {
-  const data = await getPostDetails(params.slug);
+  const posts = (await getPosts() || []);
 
   return {
-    props: { post: data }
+    props: { posts }
   }
 }
+<<<<<<< HEAD
 
 export async function getStaticPaths() {
     const posts = await getPosts()
@@ -33,3 +45,5 @@ export async function getStaticPaths() {
         fallback: true,
     }
 }
+=======
+>>>>>>> parent of fd22748 (fix bug attempt)
