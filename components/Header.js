@@ -3,13 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getCategories } from '../services';
 
-const categories = [
-  {name: 'React', slug: 'react'},
-  {name: 'Travels', slug: 'travels'},
-  {name: 'Equipment', slug: 'equipment'},
-  {name: 'Car', slug: 'car'},
-]
-
 const Header = () => {
   const [categories, setCategories] = useState([]);
 
@@ -20,7 +13,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-10 mb-8">
+    <div className="container mx-auto px-4 sm:px-10 mb-8">
       <div className="border-b w-full inline-block border-blue-400 py-8">
         <div className="md:float-left block">
           <Link href="/">
