@@ -4,7 +4,7 @@ import { getPosts, getPostDetails } from '../../services'
 
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm } from '../../components'
  
-const PostDetails = () => {
+const PostDetails = ({ post }) => {
 
   return (
     <div className='container mx-auto px-10 mb-8'>
@@ -17,7 +17,7 @@ const PostDetails = () => {
         </div>
         <div className='col-span-1 lg:col-span-4'>
             <div className='relative lg:sticky top-8'>
-                <PostWidget />
+                <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
                 <Categories />
             </div>
         </div>
@@ -28,22 +28,22 @@ const PostDetails = () => {
 
 export default PostDetails
 
+// Fetch data at build time
 export async function getStaticProps({ params }) {
-  const posts = (await getPosts() || []);
-
+  const data = await getPostDetails(params.slug);
   return {
-    props: { posts }
-  }
+    props: {
+      post: data,
+    },
+  };
 }
-<<<<<<< HEAD
 
+// Specify dynamic routes to pre-render pages based on data.
+// The HTML is generated at build time and will be reused on each request.
 export async function getStaticPaths() {
-    const posts = await getPosts()
-
-    return {
-        paths: posts.map(({ node: { slug }}) => ({ params: { slug }})),
-        fallback: true,
-    }
+  const posts = await getPosts();
+  return {
+    paths: posts.map(({ node: { slug } }) => ({ params: { slug } })),
+    fallback: true,
+  };
 }
-=======
->>>>>>> parent of fd22748 (fix bug attempt)
