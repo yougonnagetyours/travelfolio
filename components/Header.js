@@ -39,6 +39,11 @@ const Header = () => {
                   <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">About Me</span>  
               </div>    
         </div>
+        <div className="md:hidden">
+          <div className="bg-orange-400" />
+          <div className="bg-orange-500" />
+          <div className="bg-orange-600" />
+        </div>
       </div>
     </div>
   )
