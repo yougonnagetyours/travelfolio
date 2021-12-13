@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
-      <div className="flex justify-between border-b w-full inline-block border-blue-400 py-3 sm:py-8">
+      <div className="flex justify-between border-b w-full inline-block border-blue-400 pt-4 pb-2 sm:py-8">
         <div className="flex sm:block items-center">
           <Link href="/">
             <span className="cursor-pointer font-bold text-2xl sm:text-4xl text-white">
@@ -39,7 +39,7 @@ const Header = () => {
                   <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">About Me</span>  
               </div>    
         </div>
-        <div className="sm:hidden bg-pink-600 w-10 h-10 p-2 rounded-lg">
+        <div className="hamburger-menu sm:hidden bg-pink-600 w-10 h-10 p-2 rounded-lg shadow-lg">
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="h-1/3"></div>
