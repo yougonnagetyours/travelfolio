@@ -39,7 +39,7 @@ const Header = () => {
                   <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">About Me</span>  
               </div>    
         </div>
-        <div className="sm:hidden bg-pink-600 w-10 h-10 p-2">
+        <div className="sm:hidden bg-pink-600 w-10 h-10 p-2 rounded-lg">
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="h-1/3"></div>
