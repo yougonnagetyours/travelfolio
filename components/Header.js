@@ -35,7 +35,8 @@ const Header = () => {
                       </span>
                     </Link>
                   ))}
-                </div>  
+                </div>
+                <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Contact</span>  
               </div>  
             </div>  
           </div>  
