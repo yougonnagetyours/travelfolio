@@ -27,10 +27,10 @@ const Header = () => {
             <div className="relative">
               <div className='absolute top-0 right-0'>
                 <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog</span>
-                <div className="absolute left-0">
+                <div className="absolute left-0 bg-white shadow-lg rounded-lg">
                   {categories.map((category) => (
                     <Link key={category.slug} href={`/category/${category.slug}`}>
-                      <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                      <span className="md:float-right mt-2 align-middle ml-4 font-semibold cursor-pointer">
                         {category.name}
                       </span>
                     </Link>
