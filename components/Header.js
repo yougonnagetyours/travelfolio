@@ -40,9 +40,9 @@ const Header = () => {
               </div>    
         </div>
         <div className="sm:hidden h-8">
-          <div className="bg-white border-b-2 border-black w-10 h-1/3"></div>
-          <div className="bg-white border-b-2 border-black w-10 h-1/3"></div>
-          <div className="bg-white w-10 h-1/3"></div>
+          <div className="border-b-2 border-white w-10 h-1/3"></div>
+          <div className="border-b-2 border-white w-10 h-1/3"></div>
+          <div className="w-10 h-1/3"></div>
         </div>
       </div>
     </div>
