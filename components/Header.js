@@ -22,7 +22,7 @@ const Header = () => {
             </span>
           </Link>
         </div>
-        <div className="hidden md:block md:contents">          
+        <div className="hidden sm:block sm:contents">          
               <div className='flex'>
                   <div className="relative mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog
                     <div className="absolute z-50 -right-1/4 top-1/2 mt-4 mb-8  p-8 pb-12 bg-white text-black shadow-lg rounded-lg">
@@ -39,10 +39,10 @@ const Header = () => {
                   <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">About Me</span>  
               </div>    
         </div>
-        <div className="md:hidden">
-          <div className="bg-orange-400" />
-          <div className="bg-orange-500" />
-          <div className="bg-orange-600" />
+        <div className="sm:hidden h-8">
+          <div className="bg-orange-400 h-1/3" />
+          <div className="bg-orange-500 h-1/3" />
+          <div className="bg-orange-600 h-1/3" />
         </div>
       </div>
     </div>
