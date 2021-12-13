@@ -14,10 +14,10 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-8">
-      <div className="border-b w-full inline-block border-blue-400 py-8">
+      <div className="border-b w-full inline-block border-blue-400 py-2 sm:py-8">
         <div className="md:float-left block">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-2xl lg:text-4xl text-white">
+            <span className="cursor-pointer font-bold text-2xl sm:text-4xl text-white">
               Travelfolio
             </span>
           </Link>
