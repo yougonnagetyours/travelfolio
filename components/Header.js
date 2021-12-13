@@ -15,8 +15,8 @@ const Header = () => {
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
       <div className="flex justify-between border-b w-full inline-block border-blue-400 py-3 sm:py-8">
-        <div className="block">
-          <Link href="/">
+        <div className="sm:block">
+          <Link href="/" className="flex sm:block items-center">
             <span className="cursor-pointer font-bold text-2xl sm:text-4xl text-white">
               Travelfolio
             </span>
