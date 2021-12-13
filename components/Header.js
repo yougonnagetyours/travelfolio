@@ -26,7 +26,7 @@ const Header = () => {
           <div>
             <div className="relative">
               <div className='absolute top-0 right-0'>
-                <div className="h-0">
+                <div className="">
                   <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog</span>
                   <div className="absolute z-50 -right-1/4 top-full mt-4 mb-8  p-8 pb-12 bg-white shadow-lg rounded-lg">
                     {categories.map((category) => (
