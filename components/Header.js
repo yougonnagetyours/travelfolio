@@ -26,8 +26,8 @@ const Header = () => {
           <div>
             <div className="relative">
               <div className='flex'>
-                  <div className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog
-                    <div className=" hidden absolute z-50 -right-1/4 top-full mt-4 mb-8  p-8 pb-12 bg-white shadow-lg rounded-lg">
+                  <div className="relative mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog
+                    <div className="hidden absolute z-50 -right-1/4 top-full mt-4 mb-8  p-8 pb-12 bg-white shadow-lg rounded-lg">
                       {categories.map((category) => (
                         <Link key={category.slug} href={`/category/${category.slug}`}>
                           <span className="mt-2 align-middle ml-4 font-semibold cursor-pointer">
