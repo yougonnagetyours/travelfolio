@@ -14,15 +14,15 @@ const Header = () => {
 
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
-      <div className="border-b w-full inline-block border-blue-400 py-2 sm:py-8">
-        <div className="md:float-left block">
+      <div className="flex justify-between border-b w-full inline-block border-blue-400 py-2 sm:py-8">
+        <div className="block">
           <Link href="/">
             <span className="cursor-pointer font-bold text-2xl sm:text-4xl text-white">
               Travelfolio
             </span>
           </Link>
         </div>
-        <div className="hidden md:float-left md:contents">
+        <div className="hidden md:block md:contents">
           <div>
             <div className="relative">
               <div className='flex'>
@@ -39,7 +39,7 @@ const Header = () => {
                     </div>
                   </div>
                 </div>  
-                <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Contact</span>  
+                <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Contact</span>  
               </div>  
             </div>  
           </div>  
