@@ -39,10 +39,10 @@ const Header = () => {
                   <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">About Me</span>  
               </div>    
         </div>
-        <div className="sm:hidden h-10">
-          <div className="border-b-2 border-white w-8 h-1/3"></div>
-          <div className="border-b-2 border-white w-8 h-1/3"></div>
-          <div className="w-10 h-1/3"></div>
+        <div className="sm:hidden h-8">
+          <div className="border-b-2 border-white w-8 h-1/4"></div>
+          <div className="border-b-2 border-white w-8 h-1/2"></div>
+          <div className="w-10 h-1/4"></div>
         </div>
       </div>
     </div>
