@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiOutlineInstagram, AiFillGithub } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 
 import moment from 'moment'
 
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div>
             <a href="">
-                <AiFillGithub  size='2rem' />
+                <AiOutlineGithub  size='2rem' />
             </a>  
         </div>        
       </div>
