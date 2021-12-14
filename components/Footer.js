@@ -10,12 +10,12 @@ const Footer = () => {
         <div className='text-center'>Made by @yougonnagetyours</div>   
         <div className="flex justify-center border-t w-full border-gray-900 pt-2 pb-4 sm:py-8">
             <div>
-                <a href="">
+                <a href="https://www.instagram.com/yougonnagetyours/?hl=en">
                     <AiOutlineInstagram  size='2rem' />
                 </a>  
             </div>
             <div>
-                <a href="">
+                <a href="https://github.com/yougonnagetyours/travelfolio">
                     <AiOutlineGithub  size='2rem' />
                 </a>  
             </div>        
