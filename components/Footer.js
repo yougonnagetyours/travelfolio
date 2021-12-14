@@ -1,6 +1,8 @@
 import React from 'react';
 import { AiOutlineInstagram } from "react-icons/ai";
 
+import moment from 'moment'
+
 const Footer = () => {
   return (
     <div className="container mx-auto px-4 sm:px-10 mt-4 sm:mt-8">
