@@ -9,7 +9,7 @@ const Hero = () => {
         </h1>
         <div className="text-center">
             <Link href=''>
-                <span className="w-full sm:w-auto transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">See the blog</span> 
+                <span className="w-full sm:w-auto transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-lg sm:rounded-full text-white px-8 py-1 sm:py-3 cursor-pointer">See the blog</span> 
             </Link>
      </div>     
     </div>
