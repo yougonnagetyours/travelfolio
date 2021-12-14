@@ -45,8 +45,8 @@ const Header = () => {
           <div className="h-1/3"></div>
         </div>*/}
         <div className="sm:hidden w-10 h-10 p-2">
-          <div className="border-b-2 bg-pink-600 h-1/3"></div>
-          <div className="border-b-2 bg-pink-600 h-1/3"></div>
+          <div className="border-b-2 border-pink-600 h-1/3"></div>
+          <div className="border-b-2 border-pink-600 h-1/3"></div>
           <div className="h-1/3"></div>
         </div>
       </div>
