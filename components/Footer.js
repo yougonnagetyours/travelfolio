@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='text-center'>{`@${moment().format('YYYY')}`}</div>  
         <div className='text-center'>Made by @yougonnagetyours</div>   
         <div className="flex justify-center border-t w-full border-gray-900 pt-2 pb-4 sm:py-8">
-            <div>
+            <div className='mr-4'>
                 <a href="https://www.instagram.com/yougonnagetyours/?hl=en">
                     <AiOutlineInstagram  size='2rem' />
                 </a>  
