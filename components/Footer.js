@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex justify-center border-t w-full inline-block border-gray-900 pt-2 pb-4 sm:py-8">
         <div>
             <a href="">
-                <AiOutlineInstagram className='text-white h-10' />
+                <AiOutlineInstagram className='text-white' size='3rem' />
             </a>  
         </div>      
       </div>
