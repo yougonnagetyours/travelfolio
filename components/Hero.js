@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <div className="p-0 lg:p-8 pb-12 mb-8">
+    <div className="p-0 lg:p-8 my-12">
         <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
             Welcome to My Blog
         </h1>
