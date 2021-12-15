@@ -52,6 +52,7 @@ const Header = () => {
           <div className="mt-2 text-center align-middle font-semibold cursor-pointer">Blog</div>
           <div className="mt-2 text-center align-middle font-semibold cursor-pointer">Contact</div>
           <div className="mt-2 text-center align-middle font-semibold cursor-pointer">About Me</div>
+          <div className="mt-2 text-center align-middle font-semibold cursor-pointer">About Me</div>
         </div>
       </div>
     </div>
