@@ -47,8 +47,8 @@ const Header = () => {
           <div className="h-1/3"></div>
         </div>
       </div>
-      <div className="menumobile sm:hidden relative pb-8">
-        <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg rounded-lg w-full">
+      <div className="menumobile sm:hidden relative">
+        <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg pb-8 rounded-lg w-full">
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">Blog</div>
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">Contact</div>
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">About Me</div>
