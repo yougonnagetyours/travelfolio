@@ -48,11 +48,11 @@ const Header = () => {
         </div>
       </div>
       <div className="menumobile sm:hidden relative">
-        <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg pb-8 opacity-80 rounded-lg w-full">
-          <div className="mt-8 text-center align-middle cursor-pointer">Blog</div>
-          <div className="mt-8 text-center align-middle cursor-pointer">Contact</div>
-          <div className="mt-8 text-center align-middle cursor-pointer">About Me</div>
-          <div className="mt-8 text-center align-middle cursor-pointer">About Me</div>
+        <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg pb-8 rounded-lg w-full">
+          <div className="mt-8 text-center align-middle font-semibold cursor-pointer">Blog</div>
+          <div className="mt-8 text-center align-middle font-semibold cursor-pointer">Contact</div>
+          <div className="mt-8 text-center align-middle font-semibold cursor-pointer">About Me</div>
+          <div className="mt-8 text-center align-middle font-semibold cursor-pointer">About Me</div>
         </div>
       </div>
     </div>
