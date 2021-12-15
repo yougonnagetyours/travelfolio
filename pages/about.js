@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link';
 
-const PostCard = () => {
+const About = () => {
   return (
     <div className="p-0 lg:p-8 mt-32 mb-20">
         <h1 className="text-center sm:text-left mb-8 text-3xl font-semibold">
@@ -18,4 +19,4 @@ const PostCard = () => {
   )
 }
 
-export default PostCard
+export default About
