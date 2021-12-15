@@ -48,7 +48,11 @@ const Header = () => {
         </div>
       </div>
       <div className="menumobile relative">
-        <div className="absolute left-0 top-0 bg-white w-full h-96"></div>
+        <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg rounded-lg w-full h-96">
+          <div className="mt-2 text-center align-middle font-semibold cursor-pointer">Blog</div>
+          <div className="mt-2 text-center align-middle font-semibold cursor-pointer">Contact</div>
+          <div className="mt-2 text-center align-middle font-semibold cursor-pointer">About Me</div>
+        </div>
       </div>
     </div>
   )
