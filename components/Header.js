@@ -25,7 +25,7 @@ const Header = () => {
         <div className="hidden sm:block sm:contents">          
               <div className='flex'>
                   <div className="relative mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog
-                    <div className="absolute z-50 -right-1/4 top-1/2 mt-4 mb-8  p-8 pb-12 bg-white text-black shadow-lg rounded-lg">
+                    <div className="absolute z-50 -right-1/4 top-1/2 p-8 pb-8 bg-white text-black shadow-lg rounded-lg">
                       {categories.map((category) => (
                         <Link key={category.slug} href={`/category/${category.slug}`}>
                           <span className="mt-2 align-middle font-semibold cursor-pointer">
