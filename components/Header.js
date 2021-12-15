@@ -47,8 +47,8 @@ const Header = () => {
           <div className="h-1/3"></div>
         </div>
       </div>
-      <div className="menumobile">
-        <div className="bg-white w-full h-96"></div>
+      <div className="menumobile relative">
+        <div className="absolute left-0 top-0 bg-white w-full h-96"></div>
       </div>
     </div>
   )
