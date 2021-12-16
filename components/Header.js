@@ -14,7 +14,6 @@ const Header = ({ activeMenu, menuClick }) => {
   }, []);
   console.log(activeMenu)
   return (
-    <div className="relative w-full h-screen">
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
       <div className="flex justify-between border-b w-full inline-block border-gray-900 pt-4 pb-2 sm:py-8">
         <div className="flex sm:block items-center">
@@ -45,7 +44,7 @@ const Header = ({ activeMenu, menuClick }) => {
         </div>
         <div 
           className="hamburger-menu sm:hidden bg-pink-600 opacity-80 w-10 h-10 p-2 rounded-lg shadow-lg"
-          onClick={() => setActiveMenu(!activeMenu)}
+          onClick={menuClick}
         >
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="border-b-2 border-white h-1/3"></div>
@@ -60,7 +59,6 @@ const Header = ({ activeMenu, menuClick }) => {
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">About Me</div>
         </div>
       </div>
-    </div>
     </div>
   )
 }
