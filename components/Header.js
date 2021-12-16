@@ -56,7 +56,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
           onClick={menuClick}
         >
           <div className={classNames(activeMenu ? "rotate-45" : "rotate-0", "border-b-2 border-white h-1/3")}></div>
-          <div className={classNames(activeMenu ? "rotate-45" : "rotate-0", "border-b-2 border-white h-1/3")}></div>
+          <div className={classNames(activeMenu ? "-rotate-45" : "rotate-0", "border-b-2 border-white h-1/3")}></div>
           <div className="h-1/3"></div>
         </div>
       </div>
