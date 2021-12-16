@@ -53,7 +53,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
         </div>
       </div>
       <div className={activeMenu ? "transition duration-500 menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
-        <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg pb-8 rounded-lg w-full">
+        <div className="absolute z-50 right-0 -top-1 bg-white shadow-lg rounded-lg w-3/4">
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer">Blog</div>
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>Contact</div>
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>
@@ -61,7 +61,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
               About Me
             </Link>  
           </div>
-          <div className="flex justify-center border-t mt-12 w-full border-gray-900 pt-2 pb-4">
+          <div className="flex justify-center border-t mt-12 w-full border-gray-900 px-4 pt-4 pb-4">
             <div className='mr-4 transition duration-500 transform hover:-translate-y-1'>
                 <a href="https://www.instagram.com/yougonnagetyours/?hl=en">
                     <AiOutlineInstagram  size='2rem' />
