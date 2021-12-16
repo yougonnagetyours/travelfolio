@@ -63,8 +63,8 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
       </div>
       <div className={classNames(activeMenu ? "block" : "hidden", "sm:hidden relative")}>
         <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
-          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>
-            Blog {activeSubMenu ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
+          <div className="flex justify-center mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>
+            Blog {activeSubMenu ? <MdKeyboardArrowUp size="1rem" /> : <MdKeyboardArrowDown size="1rem" />}
           </div>
           <div className={classNames(activeSubMenu ? "block" : "hidden" ,"mt-6 text-center align-middle cursor-pointer")}>
             {categories.map((category) => (
