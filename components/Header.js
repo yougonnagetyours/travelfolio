@@ -25,18 +25,18 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
 
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
-      <div className="flex justify-between border-b w-full inline-block border-gray-900 pt-4 pb-2 sm:py-8">
+      <div className="flex justify-between border-b w-full border-gray-900 pt-4 pb-2 sm:py-8">
         <div className="flex sm:block items-center">
           <Link href="/">
-            <span className="cursor-pointer font-bold text-2xl sm:text-4xl text-white">
+            <span className="cursor-pointer font-bold text-2xl sm:text-4xl text-white sm:text-gray-900">
               Travelfolio
             </span>
           </Link>
         </div>
-        <div className="hidden sm:block sm:contents">          
+        <div className="hidden sm:block">          
               <div className='flex'>
-                  <div className="relative mt-2 align-middle text-white ml-4 font-semibold cursor-pointer" onClick={menuClick}>Blog
-                    <div className={classNames(activeMenu ? "block" : "hidden", "absolute z-50 -right-1/4 top-1/2 mt-4 p-8 pb-8 bg-white text-black shadow-lg rounded-lg")}>
+                  <div className="relative mt-2 align-middle text-white sm:text-gray-900 ml-4 font-semibold cursor-pointer" onClick={menuClick}>Blog
+                    <div className={classNames(activeMenu ? "block" : "hidden", "absolute z-50 -right-1/4 top-1/2 mt-4 p-8 pb-8 bg-white sm:text-gray-900 shadow-lg rounded-lg")}>
                       {categories.map((category) => (
                         <Link key={category.slug} href={`/category/${category.slug}`}>
                           <span className="mt-2 align-middle font-semibold cursor-pointer">
@@ -46,8 +46,8 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
                       ))}
                     </div>
                   </div>   
-                  <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Contact</span>  
-                  <span className="mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+                  <span className="mt-2 align-middle text-white sm:text-gray-900 ml-4 font-semibold cursor-pointer">Contact</span>  
+                  <span className="mt-2 align-middle text-white sm:text-gray-900 ml-4 font-semibold cursor-pointer">
                     <Link href="/about">About Me</Link>
                   </span>  
               </div>    
