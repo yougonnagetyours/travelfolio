@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getCategories } from '../services';
 
-const Header = () => {
-  const [categories, setCategories] = useState([]);
-  const [activeMenu, setActiveMenu] = useState(false);
+const Header = ({ activeMenu, menuClick }) => {
+  // const [categories, setCategories] = useState([]);
+  // const [activeMenu, setActiveMenu] = useState(false);
 
   useEffect(() => {
     getCategories().then((newCategories) => {
