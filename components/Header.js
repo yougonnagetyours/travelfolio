@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getCategories } from '../services';
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
   const [categories, setCategories] = useState([]);
@@ -62,12 +63,14 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
       </div>
       <div className={classNames(activeMenu ? "block" : "hidden", "sm:hidden relative")}>
         <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
-          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>Blog</div>
+          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>
+            Blog {activeSubMenu ? <MdKeyboardArrowUp /> : <MdKeyboardArrowDown />}
+          </div>
           <div className={classNames(activeSubMenu ? "block" : "hidden" ,"mt-6 text-center align-middle cursor-pointer")}>
             {categories.map((category) => (
               <div onClick={menuClickFalse}>
                 <Link key={category.slug} href={`/category/${category.slug}`}>
-                  <span className="mt-2 align-middle font-semibold cursor-pointer">
+                  <span className="mt-2 align-middle cursor-pointer">
                     {category.name}
                   </span>
                 </Link>
