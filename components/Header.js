@@ -6,7 +6,11 @@ import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 
 const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
   const [categories, setCategories] = useState([]);
-  // const [activeMenu, setActiveMenu] = useState(false);
+  const [activeSubMenu, setActiveSubMenu] = useState(false);
+
+  const subMenuClick = () => {
+    setActiveMenu(!activeMenu)
+  }
 
   useEffect(() => {
     getCategories().then((newCategories) => {
@@ -59,8 +63,8 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
       </div>
       <div className={activeMenu ? "menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
         <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
-          <div className="mt-12 text-center align-middle font-semibold cursor-pointer">Blog</div>
-          <div className="mt-6 text-center align-middle cursor-pointer">
+          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>Blog</div>
+          <div className="h-0 mt-6 text-center align-middle cursor-pointer">
             {categories.map((category) => (
               <div onClick={menuClickFalse}>
                 <Link  key={category.slug} href={`/category/${category.slug}`}>
