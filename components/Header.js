@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 import { getCategories } from '../services';
+import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 
 const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
   const [categories, setCategories] = useState([]);
