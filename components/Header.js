@@ -52,8 +52,8 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
           <div className="h-1/3"></div>
         </div>
       </div>
-      <div className={activeMenu ? "transition duration-500 menumobile sm:hidden relative" : "transition duration-500 hidden sm:hidden relative"}>
-        <div className="absolute z-50 right-0 -top-1 bg-white shadow-lg rounded-lg w-3/4">
+      <div className={activeMenu ? "menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
+        <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer">Blog</div>
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>Contact</div>
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>
