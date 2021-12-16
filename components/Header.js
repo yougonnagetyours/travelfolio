@@ -14,6 +14,11 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
     });
   }, []);
   console.log(activeMenu)
+
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
+
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
       <div className="flex justify-between border-b w-full inline-block border-gray-900 pt-4 pb-2 sm:py-8">
@@ -44,7 +49,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
               </div>    
         </div>
         <div 
-          className={activeMenu ? "opacity-100 bg-black" : "opacity-80 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg"}
+          className={classNames(activeMenu ? "opacity-100 bg-black" : "opacity-80 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg")}
           onClick={menuClick}
         >
           <div className="border-b-2 border-white h-1/3"></div>
