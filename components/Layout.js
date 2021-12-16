@@ -9,10 +9,14 @@ const Layout = ({ children }) => {
     setActiveMenu(!activeMenu)
   }
 
+  menuClickFalse = () => {
+    setActiveMenu(false)
+  }
+
   return (
     <div>
-      <Header activeMenu={activeMenu} menuClick={menuClick}/>
-        <div onClick={() => setActiveMenu(false)}>{children}</div>
+      <Header activeMenu={activeMenu} menuClick={menuClick} menuClickFalse={menuClickFalse}/>
+        <div onClick={menuClickFalse}>{children}</div>
       <Footer />
     </div>
   )
