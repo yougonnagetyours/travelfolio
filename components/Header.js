@@ -64,7 +64,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
       <div className={activeMenu ? "menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
         <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>Blog</div>
-          <div className="h-0 mt-6 text-center align-middle cursor-pointer">
+          <div className={classNames(subMenuClick ? "block" : "hidden" ,"mt-6 text-center align-middle cursor-pointer")}>
             {categories.map((category) => (
               <div onClick={menuClickFalse}>
                 <Link  key={category.slug} href={`/category/${category.slug}`}>
