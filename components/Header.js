@@ -5,13 +5,13 @@ import { getCategories } from '../services';
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
-const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
+const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickFalse }) => {
   const [categories, setCategories] = useState([]);
-  const [activeSubMenu, setActiveSubMenu] = useState(false);
+  // const [activeSubMenu, setActiveSubMenu] = useState(false);
 
-  const subMenuClick = () => {
-    setActiveSubMenu(!activeSubMenu)
-  }
+  // const subMenuClick = () => {
+  //   setActiveSubMenu(!activeSubMenu)
+  // }
 
   useEffect(() => {
     getCategories().then((newCategories) => {
@@ -35,8 +35,8 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
         </div>
         <div className="hidden sm:block sm:contents">          
               <div className='flex'>
-                  <div className="relative mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">Blog
-                    <div className="absolute z-50 -right-1/4 top-1/2 mt-4 p-8 pb-8 bg-white text-black shadow-lg rounded-lg">
+                  <div className="relative mt-2 align-middle text-white ml-4 font-semibold cursor-pointer" onClick={menuClick}>Blog
+                    <div className={classNames(activeMenu ? "block" : "hidden", "absolute z-50 -right-1/4 top-1/2 mt-4 p-8 pb-8 bg-white text-black shadow-lg rounded-lg")}>
                       {categories.map((category) => (
                         <Link key={category.slug} href={`/category/${category.slug}`}>
                           <span className="mt-2 align-middle font-semibold cursor-pointer">
