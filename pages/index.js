@@ -1,8 +1,15 @@
+import React, { useState } from 'react'
 import Head from 'next/head'
 import { Hero, PostCard, Categories, PostWidget } from '../components'
 import { getPosts } from '../services'
 
 export default function Home({ posts }) {
+  const [activeMenu, setActiveMenu] = useState(false);
+
+  const menuClick = () => {
+    setActiveMenu(!activeMenu)
+  }
+
   return (
     <div className="container mx-auto px-4 sm:px-10">
       <Head>
