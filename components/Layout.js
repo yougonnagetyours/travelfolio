@@ -10,11 +10,11 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <>
+    <div onClick={() => setActiveMenu(false)}>
       <Header activeMenu={activeMenu} menuClick={menuClick}/>
       {children}
       <Footer />
-    </>
+    </div>
   )
 }
 
