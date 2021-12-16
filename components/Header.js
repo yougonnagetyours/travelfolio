@@ -9,7 +9,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
   const [activeSubMenu, setActiveSubMenu] = useState(false);
 
   const subMenuClick = () => {
-    setActiveMenu(!activeMenu)
+    setActiveSubMenu(!activeSubMenu)
   }
 
   useEffect(() => {
@@ -17,7 +17,6 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
       setCategories(newCategories);
     });
   }, []);
-  console.log(activeMenu)
 
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
