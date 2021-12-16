@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
         <div className="text-center sm:text-left">
             <Link href='#blog'>
-                <span className="w-full sm:w-auto opacity-80 transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-lg sm:rounded-full text-white px-8 py-1 sm:py-3 cursor-pointer">See the blog</span> 
+                <span className="w-full sm:w-auto opacity-90 transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-lg sm:rounded-full text-white px-8 py-1 sm:py-3 cursor-pointer">See the blog</span> 
             </Link>
      </div>     
     </div>
