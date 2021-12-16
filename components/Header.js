@@ -5,13 +5,14 @@ import { getCategories } from '../services';
 
 const Header = () => {
   const [categories, setCategories] = useState([]);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   useEffect(() => {
     getCategories().then((newCategories) => {
       setCategories(newCategories);
     });
   }, []);
-
+  console.log(activeMenu)
   return (
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
       <div className="flex justify-between border-b w-full inline-block border-gray-900 pt-4 pb-2 sm:py-8">
@@ -41,13 +42,16 @@ const Header = () => {
                   </span>  
               </div>    
         </div>
-        <div className="hamburger-menu sm:hidden bg-pink-600 opacity-80 w-10 h-10 p-2 rounded-lg shadow-lg">
+        <div 
+          className="hamburger-menu sm:hidden bg-pink-600 opacity-80 w-10 h-10 p-2 rounded-lg shadow-lg"
+          onClick={() => setActiveMenu(!activeMenu)}
+        >
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="border-b-2 border-white h-1/3"></div>
           <div className="h-1/3"></div>
         </div>
       </div>
-      <div className="menumobile sm:hidden relative">
+      <div className={activeMenu ? "menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
         <div className="absolute z-50 left-0 -top-1 bg-white shadow-lg pb-8 rounded-lg w-full">
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">Blog</div>
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">Contact</div>
