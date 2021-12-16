@@ -44,7 +44,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
               </div>    
         </div>
         <div 
-          className={activeMenu ? "opacity-100 bg-gray-900" : "opacity-80 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg"}
+          className={activeMenu ? "opacity-100 bg-black" : "opacity-80 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg"}
           onClick={menuClick}
         >
           <div className="border-b-2 border-white h-1/3"></div>
