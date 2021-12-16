@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     setActiveMenu(!activeMenu)
   }
 
-  menuClickFalse = () => {
+  const menuClickFalse = () => {
     setActiveMenu(false)
   }
 
