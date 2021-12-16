@@ -14,6 +14,7 @@ const Header = ({ activeMenu, menuClick }) => {
   }, []);
   console.log(activeMenu)
   return (
+    <div className="relative w-full h-screen">
     <div className="container mx-auto px-4 sm:px-10 mb-4 sm:mb-8">
       <div className="flex justify-between border-b w-full inline-block border-gray-900 pt-4 pb-2 sm:py-8">
         <div className="flex sm:block items-center">
@@ -59,6 +60,7 @@ const Header = ({ activeMenu, menuClick }) => {
           <div className="mt-8 text-center align-middle font-semibold cursor-pointer">About Me</div>
         </div>
       </div>
+    </div>
     </div>
   )
 }
