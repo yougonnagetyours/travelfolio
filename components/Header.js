@@ -52,7 +52,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
               </div>    
         </div>
         <div 
-          className={classNames(activeMenu ? "opacity-100 bg-black" : "opacity-80 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg")}
+          className={classNames(activeMenu ? "opacity-100 bg-black rotate-45" : "opacity-90 bg-pink-600 rotate-0", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg")}
           onClick={menuClick}
         >
           <div className="border-b-2 border-white h-1/3"></div>
@@ -60,7 +60,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
           <div className="h-1/3"></div>
         </div>
       </div>
-      <div className={activeMenu ? "menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
+      <div className={classNames(activeMenu ? "block" : "hidden", "sm:hidden relative")}>
         <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={subMenuClick}>Blog</div>
           <div className={classNames(activeSubMenu ? "block" : "hidden" ,"mt-6 text-center align-middle cursor-pointer")}>
