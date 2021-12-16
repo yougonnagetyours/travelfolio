@@ -61,7 +61,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
               About Me
             </Link>  
           </div>
-          <div className="flex justify-center border-t mt-12 w-full border-gray-900 px-4 pt-4 pb-4">
+          <div className="flex justify-center border-t mt-12 w-full border-gray-900 mx-4 pt-4 pb-4">
             <div className='mr-4 transition duration-500 transform hover:-translate-y-1'>
                 <a href="https://www.instagram.com/yougonnagetyours/?hl=en">
                     <AiOutlineInstagram  size='2rem' />
