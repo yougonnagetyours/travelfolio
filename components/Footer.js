@@ -9,12 +9,12 @@ const Footer = () => {
         <div className='text-center'>{`@${moment().format('YYYY')}`}</div>  
         <div className='text-center'>Made by @yougonnagetyours</div>   
         <div className="flex justify-center border-t w-full border-gray-900 pt-2 pb-4 sm:py-8">
-            <div className='mr-4'>
+            <div className='mr-4 transition duration-500 transform hover:-translate-y-1'>
                 <a href="https://www.instagram.com/yougonnagetyours/?hl=en">
                     <AiOutlineInstagram  size='2rem' />
                 </a>  
             </div>
-            <div>
+            <div className="transition duration-500 transform hover:-translate-y-1">
                 <a href="https://github.com/yougonnagetyours/travelfolio">
                     <AiOutlineGithub  size='2rem' />
                 </a>  
