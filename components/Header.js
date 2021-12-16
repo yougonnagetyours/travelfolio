@@ -44,7 +44,7 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
               </div>    
         </div>
         <div 
-          className="hamburger-menu sm:hidden bg-pink-600 opacity-80 w-10 h-10 p-2 rounded-lg shadow-lg"
+          className={activeMenu ? "opacity-100 bg-gray-900" : "opacity-80 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg"}
           onClick={menuClick}
         >
           <div className="border-b-2 border-white h-1/3"></div>
@@ -55,6 +55,17 @@ const Header = ({ activeMenu, menuClick, menuClickFalse }) => {
       <div className={activeMenu ? "menumobile sm:hidden relative" : "hidden sm:hidden relative"}>
         <div className="absolute z-50 right-0 -top-1 bg-white shadow-2xl rounded-lg w-10/12">
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer">Blog</div>
+          <div className="mt-6 text-center align-middle cursor-pointer">
+            {categories.map((category) => (
+              <div onClick={menuClickFalse}>
+                <Link  key={category.slug} href={`/category/${category.slug}`}>
+                  <span className="mt-2 align-middle font-semibold cursor-pointer">
+                    {category.name}
+                  </span>
+                </Link>
+              </div>
+            ))}
+          </div>
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>Contact</div>
           <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>
             <Link href="/about">
