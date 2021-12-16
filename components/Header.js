@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getCategories } from '../services';
 
 const Header = ({ activeMenu, menuClick }) => {
-  // const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([]);
   // const [activeMenu, setActiveMenu] = useState(false);
 
   useEffect(() => {
