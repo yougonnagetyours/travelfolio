@@ -2,17 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 import { getCategories } from '../services';
-import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineGithub, AiOutlineClose } from "react-icons/ai";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { HiOutlineMenuAlt4 } from "react-icons/hi"
 
 const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickFalse }) => {
   const [categories, setCategories] = useState([]);
-  // const [activeSubMenu, setActiveSubMenu] = useState(false);
-
-  // const subMenuClick = () => {
-  //   setActiveSubMenu(!activeSubMenu)
-  // }
-
+  
   useEffect(() => {
     getCategories().then((newCategories) => {
       setCategories(newCategories);
@@ -56,9 +52,9 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
           className={classNames(activeMenu ? "opacity-100 bg-black" : "opacity-90 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg")}
           onClick={menuClick}
         >
-          <div className="origin-bottom-left border-b-2 border-white h-1/3"></div>
-          <div className="origin-bottom-left border-b-2 border-white h-1/3"></div>
-          <div className="h-1/3"></div>
+          <div className="flex align justify-center items-center color-white">
+            {activeMenu ? <AiOutlineClose size="1rem" /> : <HiOutlineMenuAlt4 size="1rem" />}
+          </div>
         </div>
       </div>
       <div className={classNames(activeMenu ? "block" : "hidden", "sm:hidden relative")}>
