@@ -9,7 +9,7 @@ const PostDetails = ({ post }) => {
   return (
     <div className='container mx-auto px-4 sm:px-10 mb-8'>
       <Head>
-        <title>{`&{post.title} | My travel blog`}</title>
+        <title>{`${post.title} | My travel blog`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='grid grid-cols-1 lg:grid-cols-12 gap-12'>
