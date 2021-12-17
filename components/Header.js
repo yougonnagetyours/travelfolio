@@ -53,7 +53,7 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
           onClick={menuClick}
         >
           <div className="flex align justify-center items-center text-white">
-            {activeMenu ? <AiOutlineClose size="2rem" /> : <HiOutlineMenuAlt4 size="2rem" />}
+            {activeMenu ? <AiOutlineClose size="1.5rem" /> : <HiOutlineMenuAlt4 size="1.5rem" />}
           </div>
         </div>
       </div>
