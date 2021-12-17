@@ -52,8 +52,8 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
           className={classNames(activeMenu ? "opacity-100 bg-black" : "opacity-90 bg-pink-600", "hamburger-menu sm:hidden w-10 h-10 p-2 rounded-lg shadow-lg")}
           onClick={menuClick}
         >
-          <div className="flex align justify-center items-center color-white">
-            {activeMenu ? <AiOutlineClose size="1rem" /> : <HiOutlineMenuAlt4 size="1rem" />}
+          <div className="flex align justify-center items-center text-white">
+            {activeMenu ? <AiOutlineClose size="2rem" /> : <HiOutlineMenuAlt4 size="2rem" />}
           </div>
         </div>
       </div>
