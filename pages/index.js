@@ -13,7 +13,7 @@ export default function Home({ posts }) {
   return (
     <div className="container mx-auto px-4 sm:px-10">
       <Head>
-        <title>Travelfolio</title>
+        <title>Travelfolio | My travel blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       

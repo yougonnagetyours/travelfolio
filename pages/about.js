@@ -1,9 +1,14 @@
 import React from 'react'
+import Head from 'next/head'
 import Link from 'next/link';
 
 const About = () => {
   return (
     <div className='container mx-auto px-4 sm:px-10 mb-8'>
+        <Head>
+            <title>About | My travel blog</title>
+            <link rel="icon" href="/favicon.ico" />
+        </Head>
         <div className="p-0 lg:p-8 mt-32 mb-20">
             <h1 className="text-center sm:text-left mb-8 text-3xl font-semibold">
                 About Me
