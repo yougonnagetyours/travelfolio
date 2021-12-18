@@ -24,7 +24,7 @@ const CommentsForm = () => {
         <input 
           type='text'
           ref={nameEl}
-          className='p-2 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-100 bg-gray-100 text-gray-700'
+          className='px-4 py-2 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-100 bg-gray-100 text-gray-700'
           placeholder='Name'
           name='name'
         />
