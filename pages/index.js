@@ -9,7 +9,7 @@ export default function Home({ posts }) {
   const menuClick = () => {
     setActiveMenu(!activeMenu)
   }
-
+  console.log(posts);
   return (
     <div className="container mx-auto px-4 sm:px-10">
       <Head>
@@ -20,7 +20,9 @@ export default function Home({ posts }) {
       <Hero />
       <div id="blog" className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1 mt-10">
-          {posts.map((post, index) => <PostCard key={index} post={post.node} />)}
+          {posts.map((post, index) => (
+              <PostCard key={index} post={post.node} />
+            ))}
         </div>
         <div className="lg:col-span-4 col-span-1">
             <div className="lg:sticky relative top-8 sm:mb-8">
@@ -37,6 +39,6 @@ export async function getStaticProps() {
   const posts = (await getPosts() || []);
 
   return {
-    props: { posts }
+    props: { posts },
   }
 }
