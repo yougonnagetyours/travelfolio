@@ -9,7 +9,9 @@ export default function Home({ posts }) {
   const menuClick = () => {
     setActiveMenu(!activeMenu)
   }
+  
   console.log(posts);
+  
   return (
     <div className="container mx-auto px-4 sm:px-10">
       <Head>
