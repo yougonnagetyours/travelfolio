@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'bounce-once' : 'animation: bounce 1s 1',
+        'bounce-once' : 'animation: bounce 1s',
       }
     },
   },
