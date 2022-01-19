@@ -93,8 +93,8 @@ const CommentsForm = ({ slug }) => {
           Post Comment
         </button>
         {showSuccessMessage && (
-          <div className="fixed z-50 left-0 bottom-0 flex justify-center w-full bounce-once">
-            <div className="bg-green-500 mx-2 md:mx-0 mb-2 md:mb-16 w-full sm:w-max text-center text-white px-4 py-2 rounded-2xl">
+          <div className="fixed z-50 left-0 bottom-0 flex justify-center w-full">
+            <div className="bg-green-500 mx-2 md:mx-0 mb-4 md:mb-16 w-full sm:w-max text-center text-white px-4 py-2 rounded-2xl">
               Comment submited for review
             </div>
           </div>
