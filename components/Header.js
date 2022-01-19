@@ -65,7 +65,7 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
               {activeSubMenu ? <MdKeyboardArrowUp size="1rem" /> : <MdKeyboardArrowDown size="1rem" />}
             </div>  
           </div>
-          <div className={classNames(activeSubMenu ? "block" : "hidden" ,"mt-6 text-center align-middle cursor-pointer")}>
+          <div className={classNames(activeSubMenu ? "block" : "hidden" ,"mt-6 w-max mx-auto cursor-pointer")}>
             {categories.map((category) => (
               <div onClick={menuClickFalse}>
                 <Link key={category.slug} href={`/category/${category.slug}`}>
