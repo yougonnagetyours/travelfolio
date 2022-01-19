@@ -15,7 +15,7 @@ const PostCard = ({ post }) => {
             />
         </div>
       </Link>  
-     <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
+     <h1 className="transition duration-700 text-center px-4 lg:px-0 mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold">
        <Link href={`/post/${post.slug}`}>
          {post.title}
        </Link>
