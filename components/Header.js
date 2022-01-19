@@ -69,7 +69,7 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
             {categories.map((category) => (
               <div onClick={menuClickFalse}>
                 <Link key={category.slug} href={`/category/${category.slug}`}>
-                  <span className="mt-2 align-middle cursor-pointer">
+                  <span className="block mt-4">
                     {category.name}
                   </span>
                 </Link>
