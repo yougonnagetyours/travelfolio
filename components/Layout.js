@@ -17,6 +17,10 @@ const Layout = ({ children }) => {
   const subMenuClick = () => {
     setActiveSubMenu(!activeSubMenu)
   }
+  
+   const subMenuClickFalse = () => {
+    setActiveSubMenu(false)
+  }
 
   return (
     <div>
@@ -27,7 +31,14 @@ const Layout = ({ children }) => {
         subMenuClick={subMenuClick}
         menuClickFalse={menuClickFalse}  
       />
-        <div onClick={menuClickFalse}>{children}</div>
+        <div 
+          onClick={() => {
+            menuClickFalse();
+            subMenuClickFalse();
+          }
+        >
+          {children}
+        </div>
       <Footer />
     </div>
   )
