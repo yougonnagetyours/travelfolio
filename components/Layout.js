@@ -29,7 +29,8 @@ const Layout = ({ children }) => {
         menuClick={menuClick} 
         activeSubMenu={activeSubMenu} 
         subMenuClick={subMenuClick}
-        menuClickFalse={menuClickFalse}  
+        menuClickFalse={menuClickFalse} 
+        subMenuClickFalse={subMenuClickFalse}
       />
         <div
           onClick={() => {
