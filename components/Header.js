@@ -6,7 +6,7 @@ import { AiOutlineInstagram, AiOutlineGithub, AiOutlineClose } from "react-icons
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { HiOutlineMenuAlt4 } from "react-icons/hi"
 
-const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickFalse }) => {
+const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickFalse, subMenuClickFalse }) => {
   const [categories, setCategories] = useState([]);
   
   useEffect(() => {
@@ -15,6 +15,11 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
     });
   }, []);
 
+  const menusFalse = () => {
+    menuClickFalse();
+    subMenuClickFalse();
+  }
+  
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
@@ -67,7 +72,7 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
           </div>
           <div className={classNames(activeSubMenu ? "block" : "hidden" ,"mt-6 w-max mx-auto cursor-pointer")}>
             {categories.map((category) => (
-              <div onClick={menuClickFalse}>
+              <div onClick={menusFalse}>
                 <Link key={category.slug} href={`/category/${category.slug}`}>
                   <span className="block mt-4">
                     {category.name}
@@ -76,8 +81,8 @@ const Header = ({ activeMenu, menuClick, activeSubMenu, subMenuClick, menuClickF
               </div>
             ))}
           </div>
-          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>Contact</div>
-          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menuClickFalse}>
+          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menusFalse}>Contact</div>
+          <div className="mt-12 text-center align-middle font-semibold cursor-pointer" onClick={menusFalse}>
             <Link href="/about">
               About Me
             </Link>  
