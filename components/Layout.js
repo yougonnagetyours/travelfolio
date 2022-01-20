@@ -31,11 +31,11 @@ const Layout = ({ children }) => {
         subMenuClick={subMenuClick}
         menuClickFalse={menuClickFalse}  
       />
-        <div 
+        <div
           onClick={() => {
             menuClickFalse();
             subMenuClickFalse();
-          }
+          }}
         >
           {children}
         </div>
