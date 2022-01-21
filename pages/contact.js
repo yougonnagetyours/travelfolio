@@ -31,7 +31,7 @@ const Contact = () => {
             </p>
             <a
               className="block text-sm border-b font-semibold w-max border-black md:text-base"
-              href="mailto:kontakt@kangurmakescandles.pl"
+              href="mailto:contact@travelfolio.com"
             >
               contact@travelfolio.com
             </a>
