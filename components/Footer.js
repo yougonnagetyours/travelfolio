@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 
-import moment from 'moment'
+import moment from 'moment';
 
 const Footer = () => {
   return (
@@ -13,12 +13,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/yougonnagetyours/?hl=en">
                     <AiOutlineInstagram  size='2rem' />
                 </a>  
-            </div>
-            <div className="transition duration-500 transform hover:-translate-y-1">
-                <a href="https://github.com/yougonnagetyours/travelfolio">
-                    <AiOutlineGithub  size='2rem' />
-                </a>  
-            </div>        
+            </div>       
         </div>
     </div>
   )
